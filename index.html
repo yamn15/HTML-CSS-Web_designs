@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Learning Log</title>
+        <meta name="description" content="日々の学習を記録">
+    </head>
+
+    <body>
+        <h1>今日の学び</h1>
+            <p>HTMLファイルの作成方法</p>
+            <h2>見出しについて</h2>
+                <p>2番目の見出しを表示</p>
+                <h3>見出しの使い方</h3>
+                    <p>一つのページには、h1タグは1つにするといい</p>
+                    <p>一つのページには、h4くらいまでを使用するのが一般的</p>
+            <h2>pタグについて</h2>
+                <p>"pタグ"は、Paragraph(段落を示す)</p>
+                <p>"pタグ"が連続すると、自動的に改行される</p>
+            <h2>写真の挿入について</h2>
+                <p>パスとファイル名を指定して、写真を表示させる</p>
+                <p>パスには相対パスや絶対パスなどの指定方法がある</p>
+                <p>画像の大きさの調整は要復習</p>
+                <img src="images/sakura.jpg" alt='美しい桜'>
+            <h2>リンクについて</h2>
+                <p>リンクを生成する際のタグがある</p>
+                <a href="https://www.yahoo.co.jp/"> yahoo</a>
+                <h3>画像にリンクを張ってみる</h3>
+                    <p>リンクタグで、画像を挟めばいい</p>
+                        <a href="https://www.yahoo.co.jp/">
+                            <img src="images/sakura.jpg" alt='美しい桜'>
+                        </a>
+            <h2>リストの表示について</h2>
+                <p>箇条書きリストを作成する際は、ul(Unordered List)タグとliタグを利用する</p>
+                <ul>
+                    <li>卵(3個)</li>
+                    <li>醤油(大さじ1)</li>
+                    <li>みりん(大さじ1)</li>
+                    <li>塩(少々)</li>
+                </ul>
+                <p>番号のついたリストは、ol(Ordered List)タグとliタグを利用する</p>
+                <ol>
+                    <li>卵(3個)</li>
+                    <li>醤油(大さじ1)</li>
+                    <li>みりん(大さじ1)</li>
+                    <li>塩(少々)</li>
+                </ol>
+            <h2>表を作成する</h2>
+                <p>表組は複数のタグを合わせて使用する</p>
+                    <table border="l">
+                        <tr>
+                            <th>プラン名</th>
+                            <th>料金</th>
+                        </tr>
+                        <tr>
+                            <td>わくわくプラン</td>
+                            <td>月額2,980円</td>
+                        </tr>
+                        <tr>
+                            <td>にこにこプラン</td>
+                            <td>月額1,980円</td>
+                        </tr>
+                    </table>
+                <p>border指定をしない場合</p>
+                    <table>
+                        <tr>
+                            <th>プラン名</th>
+                            <th>料金</th>
+                        </tr>
+                        <tr>
+                            <td>わくわくプラン</td>
+                            <td>月額2,980円</td>
+                        </tr>
+                        <tr>
+                            <td>にこにこプラン</td>
+                            <td>月額1,980円</td>
+                        </tr>
+                    </table>
+
+    </body>
+</html>
+
+
