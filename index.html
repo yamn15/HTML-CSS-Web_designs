@@ -5,40 +5,40 @@
         <title>Learning Log</title>
         <meta name="description" content="日々の学習を記録">
     </head>
-
+<!-- メインコンテンツはここから下 -->>
     <body>
         <h1>今日の学び</h1>
-            <p>HTMLファイルの作成方法</p>
+        <p>HTMLファイルの作成方法</p>
             <h2>見出しについて</h2>
-                <p>2番目の見出しを表示</p>
+            <p>2番目の見出しを表示</p>
                 <h3>見出しの使い方</h3>
-                    <p>一つのページには、h1タグは1つにするといい</p>
-                    <p>一つのページには、h4くらいまでを使用するのが一般的</p>
+                <p>一つのページには、h1タグは1つにするといい</p>
+                <p>一つのページには、h4くらいまでを使用するのが一般的</p>
             <h2>pタグについて</h2>
-                <p>"pタグ"は、Paragraph(段落を示す)</p>
-                <p>"pタグ"が連続すると、自動的に改行される</p>
+            <p>"pタグ"は、Paragraph(段落を示す)</p>
+            <p>"pタグ"が連続すると、自動的に改行される</p>
             <h2>写真の挿入について</h2>
-                <p>パスとファイル名を指定して、写真を表示させる</p>
-                <p>パスには相対パスや絶対パスなどの指定方法がある</p>
-                <p>画像の大きさの調整は要復習</p>
+            <p>パスとファイル名を指定して、写真を表示させる</p>
+            <p>パスには相対パスや絶対パスなどの指定方法がある</p>
+            <p>画像の大きさの調整は要復習</p>
                 <img src="images/sakura.jpg" alt='美しい桜'>
             <h2>リンクについて</h2>
-                <p>リンクを生成する際のタグがある</p>
+            <p>リンクを生成する際のタグがある</p>
                 <a href="https://www.yahoo.co.jp/"> yahoo</a>
                 <h3>画像にリンクを張ってみる</h3>
-                    <p>リンクタグで、画像を挟めばいい</p>
-                        <a href="https://www.yahoo.co.jp/">
-                            <img src="images/sakura.jpg" alt='美しい桜'>
-                        </a>
+                <p>リンクタグで、画像を挟めばいい</p>
+                    <a href="https://www.yahoo.co.jp/">
+                        <img src="images/sakura.jpg" alt='美しい桜'>
+                    </a>
             <h2>リストの表示について</h2>
-                <p>箇条書きリストを作成する際は、ul(Unordered List)タグとliタグを利用する</p>
+            <p>箇条書きリストを作成する際は、ul(Unordered List)タグとliタグを利用する</p>
                 <ul>
                     <li>卵(3個)</li>
                     <li>醤油(大さじ1)</li>
                     <li>みりん(大さじ1)</li>
                     <li>塩(少々)</li>
                 </ul>
-                <p>番号のついたリストは、ol(Ordered List)タグとliタグを利用する</p>
+            <p>番号のついたリストは、ol(Ordered List)タグとliタグを利用する</p>
                 <ol>
                     <li>卵(3個)</li>
                     <li>醤油(大さじ1)</li>
@@ -46,22 +46,22 @@
                     <li>塩(少々)</li>
                 </ol>
             <h2>表を作成する</h2>
-                <p>表組は複数のタグを合わせて使用する</p>
-                    <table border="l">
-                        <tr>
-                            <th>プラン名</th>
-                            <th>料金</th>
-                        </tr>
-                        <tr>
-                            <td>わくわくプラン</td>
-                            <td>月額2,980円</td>
-                        </tr>
-                        <tr>
-                            <td>にこにこプラン</td>
-                            <td>月額1,980円</td>
-                        </tr>
-                    </table>
-                <p>border指定をしない場合</p>
+            <p>表組は複数のタグを合わせて使用する</p>
+                <table border="l">
+                    <tr>
+                        <th>プラン名</th>
+                        <th>料金</th>
+                    </tr>
+                    <tr>
+                        <td>わくわくプラン</td>
+                        <td>月額2,980円</td>
+                    </tr>
+                    <tr>
+                        <td>にこにこプラン</td>
+                        <td>月額1,980円</td>
+                    </tr>
+                </table>
+            <p>border指定をしない場合</p>
                     <table>
                         <tr>
                             <th>プラン名</th>
@@ -76,6 +76,211 @@
                             <td>月額1,980円</td>
                         </tr>
                     </table>
+            <h2>セルをつなげる</h2>
+            <p>まずは基本の表</p>
+                <table border="l">
+                    <tr>
+                        <th>セル1</th>
+                        <th>セル2</th>
+                    </tr>
+                    <tr>
+                        <td>セル3</td>
+                        <td>セル4</td>
+                    </tr>
+                    <tr>
+                        <td>セル5</td>
+                        <td>セル6</td>
+                    </tr>
+                </table>
+                <h3>横にセルをつなげる</h3>
+                <p>colspan属性を追加する</p>
+                    <table border="l">
+                        <tr>
+                            <th colspan="2">セル1+セル2</th>
+                        </tr>
+                        <tr>
+                            <td>セル3</td>
+                            <td>セル4</td>
+                        </tr>
+                        <tr>
+                            <td>セル5</td>
+                            <td>セル6</td>
+                        </tr>
+                    </table>
+                <h3>縦にセルをつなげる</h3>
+                <p>rowspan属性を追加する</p>
+                    <table border="l">
+                        <tr>
+                            <th>セル1</th>
+                            <th>セル2</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">セル3+セル5</td>
+                            <td>セル4</td>
+                        </tr>
+                        <tr>
+                            <td>セル6</td>
+                        </tr>
+                    </table>
+            <h2>フォームを作成する</h2>
+            <p>フォームは複数の機能を組み合わせる</p>
+                <h3>フォーム欄を作るformタグ</h3>
+                <p>以下が主な属性</p>
+                    <table border="l">
+                        <tr>
+                            <th>属性</th>
+                            <th>用途</th>
+                        </tr>
+                        <tr>
+                            <td>action</td>
+                            <td>データ送信先ページを指定</td>
+                        </tr>
+                        <tr>
+                            <td>method</td>
+                            <td>データの転送方法の指定。主にgetかpostを入力</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>フォームの名前を指定</td>
+                        </tr>
+                    </table>
+                    <h4>example</h4>
+                        <form action="example.php" method="post" name="contact-form">
+                        <!-- ここにフォームの部品が入ります -->
+                        <!-- この例だと、入力した内容が、example.pfpへ送信される -->
+                        </form>
+            <h2>フォームで使うパーツ</h2>
+            <p>inputやtypeがある</p>
+                <h3>一行テキスト入力欄</h3>
+                <p>inputタグを使用する</p>
+                    <input type="text">
+                <p>入力欄にあらかじめテキストを入力しておくこともできる</p>
+                    <input type="text" placeholder="First Name , Last Name">
+                <p>以下が主な一行テキスト入力欄の属性</p>
+                    <table border="l">
+                        <tr>
+                            <th>属性値</th>
+                            <th>用途</th>
+                        </tr>
+                        <tr>
+                            <td>text</td>
+                            <td>1行のテキスト</td>
+                        </tr>
+                        <tr>
+                            <td>search</td>
+                            <td>検索するときのテキスト</td>
+                        </tr>
+                        <tr>
+                            <td>email</td>
+                            <td>メールアドレス</td>
+                        </tr>
+                        <tr>
+                            <td>tel</td>
+                            <td>電話番号</td>
+                        </tr>
+                        <tr>
+                            <td>url</td>
+                            <td>WebサイトのURL</td>
+                        </tr>
+                    </table>
+                <h3>ラジオボタンを作る</h3>
+                <p>以下が主な属性</p>
+                    <table border="l">
+                        <tr>
+                            <th>属性</th>
+                            <th>用途</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>ラジオボタンの名前</td>
+                        </tr>
+                        <tr>
+                            <td>value</td>
+                            <td>送信される選択肢の値</td>
+                        </tr>
+                        <tr>
+                            <td>checked</td>
+                            <td>最初から選択されている状態にするときに指定</td>
+                        </tr>
+                    </table>
+                <p>ラジオボタンの例</p>
+                    <input type="radio" name="gender" value="male"> male
+                    <input type="radio" name="gender" value="female" checked> female
+                    <input type="radio" name="gender" value="others"> others
+                <h3>チェックボックスを作る</h3>
+                <p>以下が主な属性</p>
+                    <table border="l">
+                        <tr>
+                            <th>属性</th>
+                            <th>用途</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>チェックボックスの名前</td>
+                        </tr>
+                        <tr>
+                            <td>value</td>
+                            <td>送信される選択肢の値</td>
+                        </tr>
+                        <tr>
+                            <td>checked</td>
+                            <td>最初から選択されている状態にするときに指定</td>
+                        </tr>
+                    </table>
+                <p>チェックボックスの例</p>
+                    <input type="checkbox" name="color" value="red"> red
+                    <input type="checkbox" name="color" value="blue" checked> blue
+                    <input type="checkbox" name="color" value="yellow"> yellow
+                    <input type="checkbox" name="color" value="green"> green
+                <h3>送信ボタンを作る</h3>
+                <p>以下が主な属性</p>
+                    <table border="l">
+                        <tr>
+                            <th>属性</th>
+                            <th>用途</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>ボタンの名前</td>
+                        </tr>
+                        <tr>
+                            <td>value</td>
+                            <td>ボタンに表示するテキスト</td>
+                        </tr>
+                    </table>
+                <p>送信ボタンの例</p>
+                    <input type="submit" value="send to somewhere">
+                <h3>送信ボタンに画像を使う</h3>
+                <p>以下が主な属性</p>
+                    <table border="l">
+                        <tr>
+                            <th>属性</th>
+                            <th>用途</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>ボタンの名前</td>
+                        </tr>
+                        <tr>
+                            <td>source</td>
+                            <td>ボタンに使用したい画像のファイルパス、ファイル名</td>
+                        </tr>
+                        <tr>
+                            <td>alt</td>
+                            <td>画像を説明するテキスト</td>
+                        </tr>
+                    </table>
+                <p>画像付きボタンの例</p>
+                    <input type="image" src="images/button.png" alt="送信する">
+
+
+
+
+
+
+
+
+
 
     </body>
 </html>
